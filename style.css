@@ -347,22 +347,11 @@ main .small_info p{
 
 .testimonials .testimonial img{
 	object-fit: cover;
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 110px;
+	height: 110px;
+	border-radius: 100%;
 	top: 0;
 	transition: all 0.5s;
-}
-
-.testimonials .testimonial:hover img{
-	width: 130px;
-	height: 130px;
-	border-radius: 100%;
-	position: relative;
-}
-
-.testimonials .testimonial:hover{
-
 }
 
 footer{
