@@ -170,7 +170,8 @@ nav .nav_icon{
 	max-width: 60%;
 }
 
-.welcome_container .overlay .welcome_message button, .main_categories .category .category_description button{
+.welcome_container .overlay .welcome_message button, 
+.main_categories .category .category_description button{
     cursor: pointer;
     padding: 10px 20px;
     max-width: fit-content;
@@ -185,7 +186,8 @@ nav .nav_icon{
 	background-color: dodgerblue;
 }
 
-.welcome_container .overlay .welcome_message button:hover, .main_categories .category .category_description button:hover{
+.welcome_container .overlay .welcome_message button:hover, 
+.main_categories .category .category_description button:hover{
     background-color: orangered;   
 }
 
@@ -379,6 +381,96 @@ main .small_info p{
 	height: 230px;
 	object-fit: cover;
 	border-radius: 20px;
+}
+
+.inquiries{
+	display: flex;
+	margin: 50px 30px;
+	border-radius: 20px;
+	background-color: #e0e0e0;
+	gap: 20px;
+}
+
+.inquiries .desc{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-right: solid 2px #ccc;
+	padding: 20px;
+}
+
+.inquiries .desc .fancy_stuff{
+	border-radius: 20px;
+	padding: 10px;
+	width: 100%;
+	background-color: white;
+	display: flex;
+}
+
+.inquiries .desc .fancy_stuff .images{
+	position: relative;
+	left: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.inquiries .desc .fancy_stuff .images img{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	object-fit: cover;
+	border: solid 2px white;
+}
+
+.inquiries .desc .fancy_stuff .images img:nth-child(2){
+	position: relative;
+	right: 20px;
+}
+
+.inquiries .desc .fancy_stuff .images img:nth-child(3){
+	position: relative;
+	right: 40px;
+}
+
+.inquiries form{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 20px;
+}
+
+.inquiries form .names{
+	display: flex;
+	gap: 20px;
+}
+
+.inquiries form .names .first, 
+.inquiries form .names .last{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: left;
+}
+
+.inquiries form .names input{
+	padding: 10px;
+}
+
+.inquiries form button{
+	cursor: pointer;
+    padding: 10px 20px;
+    max-width: fit-content;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+    pointer-events: initial;
+}
+
+.inquiries form button:hover{
+	background-color: dodgerblue;  
 }
 
 footer{
