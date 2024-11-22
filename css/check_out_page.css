@@ -1,0 +1,228 @@
+main{
+  min-height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: unset;
+}
+
+main .order_summary{
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  margin: 10px 0;
+}
+
+main .order_summary .items_added{
+  flex: 1;
+  max-height: 400px;
+  overflow-y: scroll;
+  display: flex;
+  padding: 1em 1.2em;
+  flex-direction: column;
+  gap: 30px;
+}
+
+main .order_summary .items_added .all_orders{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main .order_summary .items_added .all_orders .item_ordered{
+  display: flex;
+  justify-content: space-between;
+}
+
+main .order_summary .items_added .all_orders .item_ordered i{
+  cursor: pointer;
+  color: red;
+}
+
+main .order_summary .items_added .all_orders .item_ordered .image_and_details_container{
+  display: flex;
+  gap: 7px;
+}
+
+main .order_summary .items_added .all_orders .item_ordered .image_and_details_container img{
+  padding: 5px;  
+  height: 100px; 
+  width: 100px; 
+  border-radius: 20px; 
+  object-fit: cover;
+}
+
+main .order_summary .items_added .all_orders .item_ordered .image_and_details_container .item_details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .order_summary .items_added .all_orders .item_ordered .image_and_details_container .item_details .price_calculator_container{
+  display: flex;
+  gap: 10px;
+}
+
+main .order_summary .items_added .all_orders .item_ordered .image_and_details_container .item_details .price_calculator_container input{
+  width: 50px;
+  text-align: center;
+}
+
+main .order_summary .discount_and_total{
+  flex: 1;
+  border-left: solid 1px #ccc;
+}
+
+main .order_summary .discount_and_total .discounts{
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  border-bottom: solid 1px #ccc;
+  padding: 1em 1.2em;
+}
+
+main .order_summary .discount_and_total .discounts .address_container{
+  position: relative;
+}
+
+main .order_summary .discount_and_total .discounts .address_container .delivery_address_section #delivery_address{
+  width: 96%;  
+  padding: 10px 25px 10px 15px;
+}
+
+main .order_summary .discount_and_total .discounts .address_container .delivery_address_section .fa-xmark{
+  position: absolute;
+  right: 35px;
+  top: 31%;
+  cursor: pointer;
+}
+
+main .order_summary .discount_and_total .discounts .address_container .address_suggestions{
+  position: absolute;
+  margin-top: 1px;
+  width: 96%;
+  background: white;
+  border-radius: 10px;
+  z-index: 3333;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /*border: solid 1px black;*/
+}
+
+main .order_summary .discount_and_total .discounts .address_container .address_suggestions a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+  padding: 12px 15px;
+}
+
+main .order_summary .discount_and_total .discounts .address_container .address_suggestions a:hover{
+  background: #ccc;
+}
+
+main .order_summary .discount_and_total .discounts .discount_code_container input{
+  padding: 10px 12px;
+}
+
+main .order_summary .discount_and_total .discounts .discount_code_container button{
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+main .order_summary .discount_and_total .total{
+  padding: 1em 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .order_summary .discount_and_total .total .total_item_and_description{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+main .order_summary .discount_and_total .total .total_item_and_description:nth-child(4){
+  font-weight: bold;
+}
+
+main .payment{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1.5em 1.2em;
+}
+
+main .payment .payment_choice{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+main .payment .payment_choice .option{
+  flex: 1;
+  border: solid 1px black;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px 15px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+main .payment .payment_choice .option input{
+  cursor: pointer;
+}
+
+main .payment .payment_choice .option .option_description{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .payment .card_information{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main .payment .card_information .card_user_info{
+  flex: 1;
+}
+
+main .payment .card_information .card_user_info input{
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+main .payment .card_information .card_user_info .expiration_section{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .payment .card_information .card_user_info .expiration_section input{
+  flex: 1;
+}
+
+main #payment_button{
+  padding: 10px 12px;
+  color: #009579;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark){
+    main .payment .payment_choice .option{
+      border: solid 1px #ccc;
+    }
+
+    main .payment .payment_choice .option .option_description{
+      color: white;
+    }
+}
