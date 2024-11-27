@@ -684,6 +684,9 @@ footer .footer_info a i{
 	  border-color: #007bff; /* Highlighted border on focus */
 	}
 
+	.inquiries .desc .fancy_stuff{
+		background-color: #333;
+	}
 
 	@media(max-width: 700px){
 		.why_us_reasons .reason:nth-child(1){
@@ -710,11 +713,7 @@ footer .footer_info a i{
     h2, h3, p{
     	color: white;
     }
-
-    .fancy_stuff p{
-    	color: black !important;
-    }
-
+    
     footer{
         background-color: #1f1f1f;
         border-bottom: solid #ccc 1px;
