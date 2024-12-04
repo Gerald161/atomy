@@ -452,10 +452,12 @@ main .small_info p{
 .inquiries form .names{
 	display: flex;
 	gap: 20px;
+	width: 100%;
 }
 
 .inquiries form .names .first, 
 .inquiries form .names .last{
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -464,6 +466,15 @@ main .small_info p{
 
 .inquiries form .names input{
 	padding: 10px;
+}
+
+.inquiries form .names:nth-child(3) .first{
+	width: 100%;
+}
+
+textarea{
+	padding: 10px !important;
+	resize: none;
 }
 
 .inquiries form button{
@@ -671,7 +682,7 @@ footer .footer_info a i{
 		display: block;
 	}
 
-	input{
+	input, textarea{
 	  background-color: #0f0f0f; /* Dark mode background */
 	  color: #fff; /* Text color for contrast */
 	  border: 1px solid #333; /* Subtle border */
@@ -680,8 +691,9 @@ footer .footer_info a i{
 	  padding: 0 2px 3px 0;
 	}
 
-	input:focus {
+	input:focus, textarea:focus {
 	  border-color: #007bff; /* Highlighted border on focus */
+/*	  padding: 10px;*/
 	}
 
 	.inquiries .desc .fancy_stuff{

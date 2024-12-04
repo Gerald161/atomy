@@ -1,0 +1,6 @@
+.disturbing_image{
+    filter: blur(7px);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
