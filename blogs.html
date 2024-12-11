@@ -83,7 +83,7 @@
         <div class="header">
             <h3>What we do</h3>
 
-            <i class="fa-brands fa-whatsapp"></i>
+            <!-- <i class="fa-brands fa-whatsapp"></i> -->
         </div>
         <div class="header">
             <h1>Popular Blogs</h1>
@@ -106,37 +106,37 @@
 
         <div class="other_section">
             <div class="featured_blogs">
-                <div class="blog">
+                <a href="" class="blog">
                     <img src="./animals/panda.jpg" alt="Red Panda">
                     <div class="blog_details">
                         <h3>Unvieling the enigmatic World of Giant Pandas</h3>
                         <p>I am the way the truth and the life and if anyone believes in me they shall never perish</p>
                         <div class="tags">
-                            <a href="" class="tag">Pandas</a>
+                            <p class="tag">Pandas</p>
                         </div>
                     </div>
-                </div>
+                </a>
                 
-                <div class="blog">
+                <a href="" class="blog">
                     <img src="./animals/fish.jpg" alt="Fish">
                     <div class="blog_details">
                         <h3>Explore the deep with all its majesty</h3>
                         <p>I am the way the truth and the life and if anyone believes in me they shall never perish</p>
                         <div class="tags">
-                            <a href="" class="tag">Ocean Life</a>
+                            <p class="tag">Ocean Life</p>
                         </div>
                     </div>
-                </div>
-                <div class="blog">
+                </a>
+                <a href="" class="blog">
                     <img src="./animals/1.jpg" alt="Chameleon">
                     <div class="blog_details">
                         <h3>Unvieling the enigmatic World of Giant Pandas</h3>
                         <p>I am the way the truth and the life and if anyone believes in me they shall never perish</p>
                         <div class="tags">
-                            <a href="" class="tag">Chameleons</a>
+                            <p class="tag">Chameleons</p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </main>
@@ -146,7 +146,7 @@
     </div>
 
     <div class="all_available_blogs">
-
+        
     </div>
 
     <footer>
@@ -202,6 +202,30 @@
 
         closeButton.addEventListener("click", (e)=>{
             sideBar.style.left = "100%";
+        })
+
+        var allImages = [
+            "forest.jpg","3.jpg","4.jpg","fish.jpg","reddie.jpg","1.jpg","bird.jpg",
+            "panda.jpg",
+        ];
+
+        const all_available_blogs = document.querySelector(".all_available_blogs");
+
+        allImages.forEach((image)=>{
+            all_available_blogs.innerHTML += `
+                <a href="#" class="available_blog">
+                    <img src="animals/${image}" alt="Forest">
+
+                    <p>Gerald Darko - 15 Jan 2025 </p>
+
+                    <h3>Fascinating facts about life</h3>
+                    
+                    <div class="tags">
+                        <p class="tag">Diabetes</p>
+                        <p class="tag">High Blood Pressure</p>
+                    </div>
+                </a>
+            `
         })
     </script>
 </body>
