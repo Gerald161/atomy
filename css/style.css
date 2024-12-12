@@ -530,13 +530,27 @@ footer .footer_info a i{
     color: rgb(61, 57, 53);
 }
 
+.tag{
+    border-radius: 15px;
+    border: solid 1px #ccc;
+    max-width: fit-content;
+    padding: 5px 15px;
+	transition: all 0.5s;
+}
+
+.tag:hover{
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
 @media(max-width: 700px){
 	nav .nav_links{
 		display: none;
 	}
 
 	.welcome_container{
-		height: 60vh;
+		height: 84.5vh;
 	}
 
 	nav .nav_links{
@@ -644,20 +658,6 @@ footer .footer_info a i{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
-}
-
-.tag{
-    border-radius: 15px;
-    border: solid 1px #ccc;
-    max-width: fit-content;
-    padding: 5px 15px;
-	transition: all 0.5s;
-}
-
-.tag:hover{
-	background-color: black;
-	border-color: black;
-	color: white;
 }
 
 @media (prefers-color-scheme: dark){
