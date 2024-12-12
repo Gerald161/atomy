@@ -642,6 +642,7 @@ footer .footer_info a i{
 
 .tags{
 	display: flex;
+	flex-wrap: wrap;
 	gap: 10px;
 }
 
