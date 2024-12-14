@@ -6,6 +6,7 @@
 	<title>See events hosted by Atomy global Ghana and also upcoming events</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/blogs.css">
+    <link rel="stylesheet" href="./css/events.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" type="image/png" href="./images/logo3.png">
@@ -62,32 +63,10 @@
         </div>
     </div>
 
-    <div class="intro">
-        <div class="slider_info">
-            <img src="./animals/2.jpg" loading="lazy" alt="Welcome Image">
-            <div class="overlay">
-                <div class="welcome_message">
-                    <h2>Nature is essential for the survival of all flesh</h2>
-                    <p>Lo and I beheld Lucifer fell from Heaven, Lightning, woe to ye inhabitants of earth for the accuser of the brethren is amongst ye</p>
-                    
-                    <form>
-                        <input type="text" placeholder="Search for blog...">
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="heading">
         <div class="header">
-            <h3>What we do</h3>
-
-            <!-- <i class="fa-brands fa-whatsapp"></i> -->
-        </div>
-        <div class="header">
-            <h1>Popular Blogs</h1>
-            <p>Animals roam wild in forests, deserts, and oceans, each species thriving in its habitat. From the towering elephant to the swift gazelle, they play vital roles.</p>
+            <h1>News and Upcoming events</h1>
+            <!-- <p>Animals roam wild in forests, deserts, and oceans, each species thriving in its habitat. From the towering elephant to the swift gazelle, they play vital roles.</p> -->
         </div>
     </div>
 
@@ -142,29 +121,58 @@
     </main>
 
     <div class="heading">
-        <h1>All other blogs featured here</h1>
+        <h1>See all our latest news and events</h1>
     </div>
 
-    <div class="all_available_blogs">
-        
+    <div class="news_section">
+        <a href="" class="blog">
+            <img src="./animals/fish.jpg" alt="Fish">
+            <div class="blog_details">
+                <h3>Unvieling the enigmatic World of Giant Pandas</h3>
+                <p class="briefing">I am the way the truth and the life and if anyone believes in me they shall never perish</p>
+                <div class="tags">
+                    <p class="tag">Tue Jan 9, 2025</p>
+                    <p class="tag">5 Mins</p>
+                </div>
+            </div>	
+        </a>
+        <a href="" class="blog">
+            <img src="./animals/2.jpg" alt="Fish">
+            <div class="blog_details">
+                <h3>Unvieling the enigmatic World of Giant Pandas</h3>
+                <p class="briefing">I am the way the truth and the life and if anyone believes in me they shall never perish</p>
+                <div class="tags">
+                    <p class="tag">Tue Jan 9, 2025</p>
+                    <p class="tag">5 Mins</p>
+                </div>
+            </div>	
+        </a>
+        <a href="" class="blog">
+            <img src="./animals/1.jpg" alt="Fish">
+            <div class="blog_details">
+                <h3>Unvieling the enigmatic World of Giant Pandas</h3>
+                <p class="briefing">I am the way the truth and the life and if anyone believes in me they shall never perish</p>
+                <div class="tags">
+                    <p class="tag">Tue Jan 9, 2025</p>
+                    <p class="tag">5 Mins</p>
+                </div>
+            </div>	
+        </a>
+        <a href="" class="blog">
+            <img src="./animals/forest.jpg" alt="Fish">
+            <div class="blog_details">
+                <h3>Unvieling the enigmatic World of Giant Pandas</h3>
+                <p class="briefing">I am the way the truth and the life and if anyone believes in me they shall never perish</p>
+                <div class="tags">
+                    <p class="tag">Tue Jan 9, 2025</p>
+                    <p class="tag">5 Mins</p>
+                </div>
+            </div>	
+        </a>
     </div>
 
-    <p class="page_numbering_section">Viewing page 3 of 7</p>
-
-    <div class="navigation_container">
-        <a href=""><i class="fa-solid fa-arrow-left"></i> Previous</a>
-
-        <div class="pagination_container">
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="" class="active_page">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
-            <a href="">6</a>
-            <a href="">7</a>
-        </div>
-
-        <a href="">Next <i class="fa-solid fa-arrow-right"></i></a>
+    <div class="tags" style="padding: 20px;">
+        <a href="" class="tag" style="border: none;">More News &UpperRightArrow;</a>
     </div>
 
     <footer>
@@ -222,31 +230,7 @@
             sideBar.style.left = "100%";
         })
 
-        var allImages = [
-            "forest.jpg","3.jpg","4.jpg","fish.jpg","reddie.jpg","1.jpg","bird.jpg",
-            "panda.jpg",
-        ];
-
-        const all_available_blogs = document.querySelector(".all_available_blogs");
-
-        allImages.forEach((image)=>{
-            all_available_blogs.innerHTML += `
-                <a href="#" class="available_blog">
-                    <img src="animals/${image}" alt="Forest">
-
-                    <p>Gerald Darko - 15 Jan 2025 </p>
-
-                    <h3>Fascinating facts about life</h3>
-                    
-                    <p class="briefing">Something short that gives some descritions of blah blah blah</p>
-                    
-                    <div class="tags">
-                        <p class="tag">Diabetes</p>
-                        <p class="tag">High Blood Pressure</p>
-                    </div>
-                </a>
-            `
-        })
+        
     </script>
 </body>
 </html>
