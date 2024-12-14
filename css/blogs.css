@@ -244,6 +244,14 @@ main .other_section .featured_blogs .blog .blog_details{
     .intro .overlay .welcome_message{
 		max-width: unset;
 	}
+
+    .all_available_blogs{
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    }
+
+    .all_available_blogs .available_blog img{
+        max-height: 150px;
+    }
 }
 
 @media (prefers-color-scheme: dark){
