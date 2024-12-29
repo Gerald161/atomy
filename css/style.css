@@ -45,6 +45,11 @@ nav .nav_links{
 	gap: 50px;
 }
 
+nav .nav_links a{
+    transition: border-bottom 0.5s;
+    border-bottom: solid 1px transparent;
+}
+
 nav .nav_links a:hover{
 	border-bottom: solid 1px dodgerblue;
 }
@@ -61,7 +66,7 @@ nav .more_options a{
 }
 
 nav .more_options a i{
-	font-size: 25px;
+	font-size: 1.2em;
 }
 
 nav .nav_icon{
