@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Testimonies from our beloved clients</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/testimonials.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/png" href="./images/logo3.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="./images/logo3.png" loading="lazy" alt="Lazy">
+            <h4>ATOMY GH 가나</h4>
+        </a>
+
+        <div class="nav_links">
+            <a href="">Services</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="events.html">Events</a>
+        </div>
+
+        <div class="more_options">
+            <a href="">
+                <i class="fa-regular fa-sun"></i>
+            </a>
+            
+            <a href="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="./check_out_page.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+
+        <a href="" class="nav_icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="mobile_screen_sidebar">
+        <i class="close_button fas fa-times"></i>
+
+        <div style="display: flex; justify-content: space-between; flex-direction: column;">
+            <a href="index.html" class="nav_link">Home</a>
+            <a href="#about" class="nav_link">Sign in</a>
+            <a href="#services" class="nav_link">Services</a>
+            <a href="contact.html" class="nav_link">Contact</a>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Testimonials</h1>
+
+        <p>These are some of the testimonials and reviews from our beloved customers</p>
+
+        <!-- <p>Note: every individual featured here has given us their consent 
+            to help promote our products, Atomy will never use your image or 
+            representation without your express permission
+        </p> -->
+    </div>
+
+    <div class="all_available_blogs">
+        
+    </div>
+
+    <p class="page_numbering_section">Viewing page 3 of 7</p>
+
+    <div class="navigation_container">
+        <a href=""><i class="fa-solid fa-arrow-left"></i> Previous</a>
+
+        <div class="pagination_container">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="" class="active_page">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+        </div>
+
+        <a href="">Next <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <footer>
+        <div class="footer_info">
+            <h2>COMPANY INFO</h2>
+
+            <a href="#">About Us</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Career Opportunities</a>
+            <a href="#">Terms of Use</a>
+        </div>
+
+        <div class="footer_info">
+            <h2>POLICIES</h2>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer_info">
+            <h2>CUSTOMER CARE</h2>
+
+            <a href="#">Contact Us</a>
+            <a href="tel:+233554526844">0548448856</a>
+            <a href="mailto:goldfern@mail.com">atomygh@gmail.com</a>
+        </div>
+
+        <div class="footer_info">
+            <h2>Social Media</h2>
+
+            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <p style="text-align: center; margin: 15px 0;">Copyright Atomy Global GH &copy2024 All rights reserved</p>
+
+    <script src="https://kit.fontawesome.com/2843b9be73.js" crossorigin="anonymous"></script>
+
+    <script>
+        var sideBarButton = document.querySelector(".nav_icon");
+
+        var closeButton = document.querySelector(".close_button");
+
+        var sideBar = document.querySelector(".mobile_screen_sidebar");
+
+        sideBarButton.addEventListener("click", (e)=>{
+            e.preventDefault();
+            sideBar.style.left = "0";
+        })
+
+        closeButton.addEventListener("click", (e)=>{
+            sideBar.style.left = "100%";
+        })
+
+        var allImages = [
+            "forest.jpg","3.jpg","4.jpg","fish.jpg","reddie.jpg","1.jpg","bird.jpg",
+            "panda.jpg",
+        ];
+
+        const all_available_blogs = document.querySelector(".all_available_blogs");
+
+        allImages.forEach((image, index)=>{
+            all_available_blogs.innerHTML += `
+                <a href="#" class="available_blog ${index % 4 == 0 && "before_after"}">
+                    ${
+                        index % 4 != 0 ?
+                        `
+                            <div class="images_container">
+                                <img src="animals/${image}" alt="Forest">
+
+                                ${index % 2 == 0 ? `<i class="fa-regular fa-circle-play"></i>` : ``}
+                            </div>
+                        ` :
+                        `<div class="images_container">
+                            <div>
+                                <p>Before</p>
+                                <img src="animals/${image}" alt="Forest">    
+                            </div>
+
+                            <div>
+                                <p>After</p>
+                                <img src="animals/${allImages[
+                                    index !== 0 ? index - 1 : allImages.length -1
+                                ]}" alt="Forest">  
+                            </div>
+                            ${index % 3 == 0 ? `<i class="fa-regular fa-circle-play"></i>` : ``}
+                        </div>`
+                    }
+
+                    <p>Gerald Darko - 15 Jan 2025 </p>
+
+                    <h3>Fascinating facts about life</h3>
+                    
+                    <p class="briefing">Something short that gives some descritions of blah blah blah</p>
+                </a>
+            `
+        })
+    </script>
+</body>
+</html>

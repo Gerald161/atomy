@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Orders</title>
+	<link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="./css/check_out_page.css"/>
+    <link rel="shortcut icon" type="image/png" href="./images/logo3.png">
+</head>
+<body>
+	<nav>
+    <a href="./index.html" class="logo">
+      <img src="./images/logo3.png" loading="lazy" alt="Lazy">
+      <h4>ATOMY GH 가나</h4>
+    </a>
+
+    <div class="nav_links">
+      <a href="">Services</a>
+			<a href="testimonials.html">Testimonials</a>
+			<a href="events.html">Events</a>
+			<a href="blogs.html">Blogs</a>
+    </div>
+
+    <div class="more_options">
+      <a href="">
+        <i class="fa-regular fa-sun"></i>
+      </a>
+
+      <a href="">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+
+      <a href="">
+        <i class="fa-regular fa-heart"></i>
+      </a>
+
+      <a href="">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+
+      <a href="">
+        <i class="fa-regular fa-circle-user"></i>
+      </a>
+    </div>
+
+    <a href="" class="nav_icon">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+  <div class="mobile_screen_sidebar">
+        <i class="close_button fas fa-times"></i>
+
+        <div style="display: flex; justify-content: space-between; flex-direction: column;">
+            <a href="index.html" class="nav_link">Home</a>
+            <a href="#about" class="nav_link">Products</a>
+            <a href="#services" class="nav_link">Services</a>
+            <a href="contact.html" class="nav_link">Contact</a>
+        </div>
+    </div>
+
+  <main>
+    <h3 style="text-align: center; margin: 20px">All Orders</h3>
+
+    <div class="order_summary">
+      <div class="items_added">
+        <h3>Order Summary</h3>
+
+        <div class="all_orders">
+          <div class="item_ordered">
+            <div class="image_and_details_container">
+              <a href="">
+                <img src="./images/2.png" alt="Himohim">
+              </a>
+
+              <div class="item_details">
+                <p>HimoHim</p>
+                <div class="price_calculator_container">
+                  <input type="number" placeholder="Num" value="1" min="1" name="">
+                  <p><span>12</span>$</p>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="item_ordered">
+            <div class="image_and_details_container">
+              <a href="#">
+                <img src="./images/cafe_arabica.png">
+              </a>
+
+              <div class="item_details">
+                <p>Cafe Arabica</p>
+                <div class="price_calculator_container">
+                  <input type="number" placeholder="Num" value="3" min="1" name="">
+                  <p><span>30</span>$</p>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="item_ordered">
+            <div class="image_and_details_container">
+              <a href="#">
+                <img src="./images/ginseng.jpg">
+              </a>
+
+              <div class="item_details">
+                <p>Red Korean Ginseng</p>
+                <div class="price_calculator_container">
+                  <input type="number" placeholder="Num" value="3" min="1" name="">
+                  <p><span>30</span>$</p>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="item_ordered">
+            <div class="image_and_details_container">
+              <a href="">
+                <img src="./images/2.png" alt="Himohim">
+              </a>
+
+              <div class="item_details">
+                <p>HimoHim</p>
+                <div class="price_calculator_container">
+                  <input type="number" placeholder="Num" value="1" min="1" name="">
+                  <p><span>12</span>$</p>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="item_ordered">
+            <div class="image_and_details_container">
+              <a href="#">
+                <img src="./images/cafe_arabica.png">
+              </a>
+
+              <div class="item_details">
+                <p>Cafe Arabica</p>
+                <div class="price_calculator_container">
+                  <input type="number" placeholder="Num" value="3" min="1" name="">
+                  <p><span>30</span>$</p>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="item_ordered">
+            <div class="image_and_details_container">
+              <a href="#">
+                <img src="./images/ginseng.jpg">
+              </a>
+
+              <div class="item_details">
+                <p>Red Korean Ginseng</p>
+                <div class="price_calculator_container">
+                  <input type="number" placeholder="Num" value="3" min="1" name="">
+                  <p><span>30</span>$</p>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="discount_and_total">
+        <div class="discounts">
+          <p>Delivery Address</p>
+
+          <div class="address_container">
+            <div class="delivery_address_section">
+              <input id="delivery_address" type="text" placeholder="Delivery Address" name="">
+              <i id="clear_address_results_button" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="address_suggestions">
+
+            </div>
+          </div>
+
+          <p>Gift Card/Discount Code</p>
+
+          <div class="discount_code_container">
+            <input type="text" placeholder="Discount" name="">
+
+            <button>Apply</button>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="total_item_and_description">
+            <p>Subtotal</p>
+            <p>50.00$</p>
+          </div>
+
+          <div class="total_item_and_description">
+            <p>Tax</p>
+            <p>20.00$</p>
+          </div>
+
+          <div class="total_item_and_description">
+            <p>Shipping</p>
+            <p>0.00$</p>
+          </div>
+
+          <div class="total_item_and_description">
+            <p>Total</p>
+            <p>70.00$</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment">
+      <h3>Payment Details</h3>
+
+      <div class="payment_choice">
+        <label for="credit_card" class="option">
+          <div class="option_description">
+            <i class="fa-solid fa-credit-card"></i>
+            <p>Credit Card</p>
+          </div>
+          
+          <input id="credit_card" checked type="radio" name="payment_method" value="">
+        </label>
+
+        <label for="paypal" class="option">
+          <div class="option_description">
+            <i class="fa-brands fa-paypal"></i>
+            <p>Pay Pal</p>
+          </div>
+          
+          <input id="paypal" type="radio" name="payment_method" value="">
+        </label>
+      </div>
+
+      <div class="card_information">
+        <div class="card_user_info">
+          <p>CardHolder Name</p>
+
+          <input type="text" placeholder="Enter card user" name="">
+        </div>
+
+        <div class="card_user_info">
+          <p>Card Number</p>
+
+          <input type="number" placeholder="Enter card number" name="">
+        </div>
+      </div>
+
+      <div class="card_information">
+        <div class="card_user_info">
+          <p>Expiration Date</p>
+
+          <div class="expiration_section">
+            <input type="number" placeholder="MM" name="">
+            <input type="number" placeholder="YY" name="">
+          </div>
+        </div>
+
+        <div class="card_user_info">
+          <p>CVV</p>
+
+          <input type="number" placeholder="Enter card number" name="">
+        </div>
+      </div>
+
+      <button id="payment_button">Pay $70.00</button>
+    </div>
+  </main>
+
+  <footer>
+        <div class="footer_info">
+            <h2>COMPANY INFO</h2>
+
+            <a href="#">About Us</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Career Opportunities</a>
+            <a href="#">Terms of Use</a>
+        </div>
+
+        <div class="footer_info">
+            <h2>POLICIES</h2>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Accessibility Statement</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer_info">
+            <h2>CUSTOMER CARE</h2>
+
+            <a href="#">Contact Us</a>
+            <a href="tel:+233554526844">0548448856</a>
+            <a href="mailto:atomyglobal">atomygh@gmail.com</a>
+        </div>
+
+        <div class="footer_info">
+            <h2>Social Media</h2>
+
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <p class="copyright">&copy2024 Atomy GH All Rights Reserved</p>
+
+  <script src="https://kit.fontawesome.com/2843b9be73.js" crossorigin="anonymous"></script>
+
+  <script>
+        var sideBarButton = document.querySelector(".nav_icon");
+
+        var closeButton = document.querySelector(".close_button");
+
+        var sideBar = document.querySelector(".mobile_screen_sidebar");
+
+        sideBarButton.addEventListener("click", (e)=>{
+          e.preventDefault();
+            sideBar.style.left = "0";
+        })
+
+        closeButton.addEventListener("click", (e)=>{
+            sideBar.style.left = "100%";
+        })
+    </script>
+
+  <script type="text/javascript" src="./js/check_out_page.js"></script>
+</body>
+</html>
